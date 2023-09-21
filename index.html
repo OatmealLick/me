@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Łukasz Ściga</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+	body {
+	    width: 60%;
+	    min-width: 600px;
+	    margin: 0 auto;
+	    padding: 20px;
+	    font-family: Tahoma, sans-serif;
+	}
+
+	.title {
+	    text-align: center;
+	    font-size: 2em;
+	}
+
+	.card-container {
+            display: flex;
+            margin: 20px 0 20px 0;
+            padding: 10px;
+	    box-shadow: 0px 0px 30px #e0e0e0;
+	    min-height: 150px;
+	    max-height: 190px;
+        }
+
+	.trash {
+            border: 0.5px solid #ccc;
+            border-radius: 5px;
+	}
+
+        .card-left {
+            flex: 70%;
+            padding: 0 10px 0 10px;
+        }
+
+	.card-left h2 {
+	    margin: 10px 0 10px 0;
+	}
+
+        .card-right {
+            flex: 30%;
+            background-color: #f2f2f2;
+	    text-align: center; /* Centering the image and text vertically */
+        }
+
+        .card-right img {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto; 
+        }
+    </style>
+  </head>
+  <body>
+    <!-- podcast, games & prototypes & projects -->
+  <main>
+    <div class="title">
+	<h1>Łukasz Ściga</h1>
+    </div>
+    <div class="card-list">
+	<div class="card-container">
+	    <div class="card-left">
+		<h2>The Game Engineering Podcast</h2>
+		<p>Technical side of game development: Rendering Pipelines, behind the scenes Linear Algebra and more!</p>
+		<p>
+		    <a href="https://open.spotify.com/show/7tExkDJcI6vvmpCguX8Ygd?si=b9077e6a20194d58">Spotify</a>
+		    <a href="https://podcasts.apple.com/us/podcast/game-engineering-podcast/id1683109481">Apple Podcasts</a>
+		    <a href="https://pca.st/s918qm07">Pocket Casts</a>
+		    <a href="https://anchor.fm/s/dd7643a4/podcast/rss">RSS</a>
+		</p>
+	    </div>
+	    <div class="card-right">
+		<a href="https://open.spotify.com/show/7tExkDJcI6vvmpCguX8Ygd?si=b9077e6a20194d58" target="_blank" rel="noreferrer">
+		    <img src="img/podcast-logo.png" class="logo" alt="The Game Engineering Podcast Logo" />
+		</a>
+	    </div>
+	</div>
+	<div class="card-container">
+	    <div class="card-left">
+		<h2>Harry the Fridge</h2>
+		<p>Point and click 2D adventure game, a story about the hardships of life as a fridge!</p>
+		<p><em>Under development</em></p>
+	    </div>
+	    <div class="card-right">
+		<img src="img/harry.png" class="logo" alt="Fridge with eyes and arms" />
+	    </div>
+	</div>
+	<div class="card-container">
+	    <div class="card-left">
+		<h2>Marvelous Show</h2>
+		<p class="description">
+		Game featuring a series of mini games in the grotesque talent show by the beloved host Marvel! A submission for Game Jam ranking #2 for Art & Graphics!.
+		</p>
+		<p><a href="https://lick.itch.io/marvelous-show" target="_blank" rel="noreferrer">Play in Browser on itch.io!</a></p>
+	    </div>
+	    <div class="card-right">
+		<a href="https://lick.itch.io/marvelous-show" target="_blank" rel="noreferrer">
+		    <img src="img/marvelous-show.png" class="logo" alt="Marvelous Show Game Title Image" />
+		</a>
+	    </div>
+	</div>
+	<div class="card-container">
+	    <div class="card-left">
+		<h2>Raytracing in JAI</h2>
+		<p class="description">
+		Raytracer written in JAI programming language, adapted from <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html">Ray Tracing in One Weekend</a>. Supporting diffuse, glass and dielectric materials!
+		</p><a href="https://github.com/OatmealLick/raytracing-jai">Source Code</a></p>
+	    </div>
+	    <div class="card-right">
+		    <img src="img/raytracing1.png" class="logo" alt="Raytraced Image of different kinds of balls" />
+	    </div>
+	</div>
+	<div class="card-container">
+	    <div class="card-left">
+		<h2>Stellar Asylum</h2>
+		<p>Groundbreaking success in mobile game world! A local multiplayer game with variety of characters each with unique abilities, none of them sane.</p>
+	         <p><a href="https://play.google.com/store/apps/details?id=com.stellarasylum.stellarasylum&hl=en&gl=US">Google Play</a></p>
+	    </div>
+	    <div class="card-right">
+	         <a href="https://play.google.com/store/apps/details?id=com.stellarasylum.stellarasylum&hl=en&gl=US"><img src="img/stellar-asylum.png"/></a>
+	    </div>
+	</div>
+	<div class="card-container">
+	    <div class="card-left">
+		<h2>Entangler</h2>
+		<p>Mobile game in which you dodge the obstacles while spinning in circles! Protip: The obstacles come at you much more quickly the further away you're from the center because physics!</p>
+	         <p><a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.Entangler2&hl=en_US">Google Play</a></p>
+	    </div>
+	    <div class="card-right">
+	         <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.Entangler2&hl=en_US"><img src="img/entangler.png"/></a>
+	    </div>
+	</div>
+    </div>
+</main>
+    <script src="index.js"></script>
+  </body>
+</html>
