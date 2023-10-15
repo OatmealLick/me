@@ -2,59 +2,98 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Łukasz Ściga</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <style>
 	body {
-	    width: 60%;
 	    margin: 0 auto;
-	    padding: 20px;
 	    font-family: Tahoma, sans-serif;
+	    background-color: lightgreen;
+	    font-size: 16px;
+	    width: 60%;
+	}
+	@media only screen and (max-width: 1000px) {
+	    body {
+		background-color: lightyellow;
+		font-size: 14px;
+		width: 80%;
+	    }
 	}
 	@media only screen and (max-width: 768px) {
-	    width: 100%;
+	    body {
+		background-color: lightblue;
+		font-size: 12px;
+		width: 100%;
+	    }
 	}
 
 	.title {
 	    text-align: center;
 	    font-size: 2em;
 	}
+
 	@media only screen and (max-width: 768px) {
-	    .title {
-		font-size: 1em;
+	    .card-list {
+		margin: 10px;
+
 	    }
 	}
 
 	.card-container {
             display: flex;
             margin: 20px 0 20px 0;
-            padding: 10px;
+            padding: 10px 0 10px 0;
 	    box-shadow: 0px 0px 30px #e0e0e0;
 	    min-height: 150px;
 	    max-height: 190px;
         }
-
-	.trash {
-            border: 0.5px solid #ccc;
-            border-radius: 5px;
-
-	    background-color: #f2f2f2;
+	@media only screen and (max-width: 1000px) {
+	    .card-container {
+		min-height: 120px;
+		max-height: 150px;
+	    }
+	}
+	@media only screen and (max-width: 768px) {
+	    .card-container {
+		min-height: 100px;
+		max-height: 120px;
+	    }
 	}
 
         .card-left {
             flex: 70%;
-            padding: 0 10px 0 10px;
+            padding: 0 5px 0 10px;
         }
 
 	.card-left h2 {
 	    margin: 10px 0 10px 0;
+	    font-size: 1.5em;
+	}
+	@media only screen and (max-width: 1000px) {
+	    .card-left h2 {
+	    }
+	}
+	@media only screen and (max-width: 768px) {
+	    .card-left h2 {
+	    }
+	}
+
+	.card-left p {
+	    margin: 10px 0 10px 0;
+	}
+	@media only screen and (max-width: 1000px) {
+	    .card-left p {
+	    }
+	}
+	@media only screen and (max-width: 768px) {
+	    .card-left p {
+	    }
 	}
 
         .card-right {
             flex: 30%;
 	    text-align: center;
+	    padding: 0 10px 9 5px;
         }
 
         .card-right img {
@@ -95,6 +134,17 @@
 	    </div>
 	    <div class="card-right">
 		<img src="img/harry.png" class="logo" alt="Fridge with eyes and arms" />
+	    </div>
+	</div>
+	<div class="card-container">
+	    <div class="card-left">
+		<h2>Metroidvania Platformer Study</h2>
+		<p>Barebones Metroidvania Platformer game which I used to study how to handle code with highly interconnected state. Read my 4 key (anti Clean Code :O) takeaways and see the full code on Github!</p>
+		<p><a href="https://github.com/OatmealLick/cubinobi#clean-code-impairs-your-ability-to-manage-interconnected-state" target="_blank" rel="noreferrer">Readme and code here!</a></p>
+		
+	    </div>
+	    <div class="card-right">
+		<img src="img/platformer-study.png" class="logo" alt="Fridge with eyes and arms" />
 	    </div>
 	</div>
 	<div class="card-container">
