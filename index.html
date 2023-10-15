@@ -5,29 +5,38 @@
     <title>Łukasz Ściga</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <style>
+        .trash {
+	    background-color: lightgreen;
+	    background-color: lightyellow;
+	    background-color: lightblue;
+        }
 	body {
 	    margin: 0 auto;
 	    font-family: Tahoma, sans-serif;
-	    background-color: lightgreen;
 	    font-size: 16px;
 	    width: 60%;
 	}
 	@media only screen and (max-width: 1000px) {
 	    body {
-		background-color: lightyellow;
 		width: 80%;
+		font-size: 24px;
 	    }
 	}
 	@media only screen and (max-width: 768px) {
 	    body {
-		background-color: lightblue;
-		width: 100%;
+		width: 94%;
+		font-size: 32px;
 	    }
 	}
 
 	.title {
 	    text-align: center;
 	    font-size: 2em;
+	}
+	@media only screen and (max-width: 768px) {
+	    .title {
+		font-size: 1em;
+	    }
 	}
 
 	@media only screen and (max-width: 768px) {
@@ -94,7 +103,7 @@
         }
 	@media only screen and (max-width: 1000px) {
 	    .card-right img {
-		height: 40vh;
+		height: 50vh;
 	    }
 	}
     </style>
